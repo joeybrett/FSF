@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane minHeight="800.0" minWidth="1200.0" prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Manager.BaseController">
+   <center>
+      <BorderPane minHeight="800.0" minWidth="1200.0" prefHeight="800.0" prefWidth="1200.0" BorderPane.alignment="CENTER">
+         <top>
+            <MenuBar BorderPane.alignment="CENTER">
+              <menus>
+                <Menu mnemonicParsing="false" text="File">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="Close" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Edit">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="Make Editable" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Help">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="About" />
+                  </items>
+                </Menu>
+              </menus>
+            </MenuBar>
+         </top>
+         <center>
+            <TableView prefHeight="775.0" prefWidth="649.0" BorderPane.alignment="CENTER">
+              <columns>
+                <TableColumn prefWidth="75.0" text="Sale #" />
+                <TableColumn prefWidth="75.0" text="Date" />
+                  <TableColumn prefWidth="75.0" text="Name" />
+                  <TableColumn prefWidth="75.0" text="City" />
+                  <TableColumn prefWidth="75.0" text="Fence Style" />
+                  <TableColumn prefWidth="75.0" text="Feet" />
+                  <TableColumn prefWidth="75.0" text="Quote" />
+                  <TableColumn prefWidth="75.0" text="Sold" />
+                  <TableColumn prefWidth="75.0" text="Reference" />
+                  <TableColumn prefWidth="75.0" text="Crew" />
+                  <TableColumn prefWidth="75.0" text="Profit" />
+              </columns>
+            </TableView>
+         </center>
+         <left>
+            <GridPane prefHeight="775.0" prefWidth="203.0" BorderPane.alignment="CENTER">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" GridPane.valignment="TOP">
+                     <image>
+                        <Image url="@../../logo.png" />
+                     </image>
+                  </ImageView>
+                  <Button mnemonicParsing="false" prefHeight="80.0" prefWidth="150.0" style="-fx-background-color: #073ABE;" text="Graphs" textFill="WHITE" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font></Button>
+                  <Button mnemonicParsing="false" prefHeight="80.0" prefWidth="150.0" style="-fx-background-color: #073ABE;" text="Advertising" textFill="WHITE" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font></Button>
+                  <Button mnemonicParsing="false" prefHeight="80.0" prefWidth="150.0" style="-fx-background-color: #073ABE;" text="Gen Quote" textFill="WHITE" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font></Button>
+                  <Button mnemonicParsing="false" onAction="#newJob" prefHeight="80.0" prefWidth="150.0" style="-fx-background-color: #073ABE;" text="New Job" textFill="WHITE" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font></Button>
+               </children>
+            </GridPane>
+         </left>
+      </BorderPane>
+   </center>
+</BorderPane>
